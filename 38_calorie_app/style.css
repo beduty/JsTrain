@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bg {
+  width: 100vw;
+  height: 65px;
+  background: #2196f3;
+  /* border: solid 1px red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80vw;
+  margin: 0px auto;
+  position: relative;
+}
+
+.container h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+.btn {
+  border: none;
+  outline: none;
+  color: white;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 35px;
+  background-color: #0069d9;
+  cursor: pointer;
+}
+
+nav div .container button {
+  position: absolute;
+  width: 145px;
+  height: 40px;
+  right: 0;
+  top: 7px;
+  font-weight: bold;
+  background: #90caf9;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 25px 20px;
+}
+.card h1 {
+  color: #333;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+}
+.row div {
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 20px;
+}
+.row div p {
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.5s all ease;
+}
+.row div input {
+  border: none;
+  border-bottom: 1.5px solid #aaa;
+  padding: 5px 0;
+  outline: none;
+  transition: 1s border-bottom ease;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.row div input::placeholder {
+  font-size: 15px;
+}
+
+.row div input:focus {
+  border-bottom: 1.5px solid #26a69a;
+}
+
+.row div input:focus + p {
+  color: #26a69a;
+}
+
+#btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#btn-row button {
+  position: relative;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+#btn-update {
+  background-color: #ff9800;
+}
+#btn-delete {
+  background-color: #f44336;
+}
+#btn-back {
+  background-color: #9e9e9e;
+}
+#total-cal {
+  margin: 20px auto;
+  font-size: 45px;
+  text-align: center;
+}
+.list-li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-top: none;
+  padding: 5px 20px;
+}
+.list-li:first-child {
+  border-top: 1px solid #aaa;
+}
+
+.li-meal {
+  font-weight: bold;
+  font-size: 18px;
+}
+.li-cal {
+  font-style: italic;
+  font-weight: 500;
+}
+.li-edit {
+  font-size: 20px;
+}
+
+.fade {
+  display: none;
+}

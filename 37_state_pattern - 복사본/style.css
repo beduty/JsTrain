@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav div {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #999;
+}
+li {
+  list-style: none;
+  margin-left: 20px;
+}
+h3 {
+  margin-left: 20px;
+}
+input[type="checkbox"] {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  height: 50px;
+}
+#hamberger {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 46px;
+  height: 46px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+#hamberger div {
+  width: 30px;
+  height: 2px;
+  background: black;
+  position: relative;
+  transition: all 1s ease;
+}
+
+#hamberger div::before,
+#hamberger div::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: black;
+  top: 11px;
+  transition: all 1s ease;
+}
+
+#hamberger div::before {
+  top: -11px;
+  background: black;
+}
+
+#chkbox:checked + #hamberger div {
+  transform: rotate(225deg);
+}
+#chkbox:checked + #hamberger div::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+#chkbox:checked + #hamberger div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #navbar {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* visibility: hidden;
+    opacity: 0; */
+    transform: translateY(-100px);
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+  li {
+    list-style: none;
+    margin: 10px 20px;
+  }
+  #hamberger {
+    visibility: visible;
+    opacity: 1;
+  }
+}

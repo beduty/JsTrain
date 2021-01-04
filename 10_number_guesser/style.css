@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 50px;
+}
+.game p:first-child {
+  font-size: 30px;
+}
+
+.container {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+}
+
+.container input {
+  padding: 5px;
+  border: 1px #aaa solid;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+}
+
+.container input[type="submit"] {
+  cursor: pointer;
+  background: transparent;
+  font-size: 15px;
+  padding: 8px;
+}
+
+input[type="number"]:focus {
+  border: 2px solid #39c5f0;
+}
+
+.result_correct {
+}

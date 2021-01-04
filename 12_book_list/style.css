@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+.container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+.book-input:focus {
+  border: 2px solid #39c5f0;
+}
+
+.book-add {
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap; /*한줄에 쓰기*/
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  outline: none;
+}
+.book-table {
+  display: table;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.book-table {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+th {
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+td {
+  font-size: 15px;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+td:nth-child(4) {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #893840;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #008000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

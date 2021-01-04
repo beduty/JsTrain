@@ -1,0 +1,15 @@
+button {
+  padding: 10px 30px;
+  background: rgb(40, 117, 161);
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#send-msg {
+  background: rgb(62, 209, 17);
+}

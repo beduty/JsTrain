@@ -1,0 +1,28 @@
+.container {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+button {
+  padding: 5px 30px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px #aaa solid;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  padding: 5px 5px 5px 10px;
+  outline: none;
+  border: 2px #aaa solid;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 3px skyblue solid;
+}

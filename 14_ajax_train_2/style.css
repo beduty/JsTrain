@@ -1,0 +1,15 @@
+.container {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px #aaa solid;
+  outline: none;
+  margin-top: 20px;
+}

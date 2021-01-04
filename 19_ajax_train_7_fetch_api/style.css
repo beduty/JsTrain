@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  /* border: 1px solid #aaa; */
+}
+
+h1 {
+  font-size: 43px;
+}
+
+button {
+  padding: 10px 30px;
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  border: 2px #aaa solid;
+  color: #555;
+}

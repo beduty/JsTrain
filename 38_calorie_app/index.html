@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Tracalorie | Meal & Calorie Tracker</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-bg">
+      <div class="container">
+          <h1>Tracalorie</h1>
+          <button class="btn" id ="clear-all">CLEAR ALL</button>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+      <div class="card">
+          <h1>Add Meal / Food Item</h1>
+          <div class="row">
+            <div>
+              <input type="text" placeholder="Add Item" id = "input-item">
+              <p>Meal</p>
+            </div>
+            <div>
+              <input type="number" placeholder="Add Calories"  id = "input-calorie">
+              <p>Calories</p>
+            </div>
+          </div>
+          <div id = "btn-row">
+            <div class="row">
+              <button class="btn" id = "btn-add">Add Meal</button>
+              <button class="btn fade" id = "btn-update">Update Meal</button>
+              <button class="btn fade" id = "btn-delete">Delete Meal</button>
+            </div>
+            <button class="btn fade" id = "btn-back">BACK</button>
+          </div>
+      </div>
+      <p id="total-cal">Total Calories : 0</p>
+
+      <ul id = "list-cals">
+        <!-- <li class="list-li">
+          <div class="li-item">
+            <span class="li-meal">Steak Dinner: </span>
+            <span class="li-cal">1200</span> Calories
+          </div>
+          <div class="li-edit"><a href="#">🖍</a></div>
+        </li> -->
+      </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

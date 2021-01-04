@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="bg">
+        <div class="card">
+            <!-- <div class="err-group">
+                <span>Please check your numbers</span>
+            </div> -->
+            <h1 class="card-heading">Loan Calculator</h1>
+            <form id = "form">
+                <div class="form-input">
+                    <span>$</span>
+                    <input type="number" placeholder="Loan Amount">
+                </div>
+                <div class="form-input">
+                    <span>%</span>
+                    <input type="number" placeholder="Interest">
+                </div>
+                <div class="form-input">
+                    <input type="number" placeholder="Years To Repay">
+                </div>                
+            </form>
+            <button>Calulate</button>
+            <div class="loading">
+                <img src="img/loading.gif" alt="">
+            </div>
+            
+            <div class="results">
+                <span>Results</span>
+                <div class="results-input">
+                    <span>Monthly Payment</span>
+                    <input type="number" id = "m-payment">
+                </div>
+                <div class="results-input">
+                    <span>Total Payment</span>
+                    <input type="number" id = "t-payment">
+                </div>
+                <div class="results-input">
+                    <span>Total Interest</span>
+                    <input type="number" id = "t-interest">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src = "app.js"></script>
+</body>
+</html>
